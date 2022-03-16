@@ -183,6 +183,7 @@ class Post {
     permalinkTemplate = json['permalink_template'];
     generatedSlug = json['generated_slug'];
     lLinks = json['_links'] != null ? new Links.fromJson(json['_links']) : null;
+    tags = json['tags'];
   }
 
   Map<String, dynamic> toJson() {
@@ -205,6 +206,7 @@ class Post {
     data['format'] = enumStringToName(this.format.toString());
     data['categories'] = listToUrlString(this.categoryIDs ?? []);
     data['tags'] = listToUrlString(this.tagIDs ?? []);
+    data['acf'] = this.tags;
 
     return data;
   }
