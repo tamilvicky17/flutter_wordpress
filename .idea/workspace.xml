@@ -283,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587501064903</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="init">
+      <created>1647426434537</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1647426434537</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -380,7 +387,8 @@
     <MESSAGE value="Create, Update and Delete Comment. Create, Update and Delete Post. Update and Delete User." />
     <MESSAGE value="Final Touches!!" />
     <MESSAGE value="CreateUser Added!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="CreateUser Added!!!" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/schemas/category.dart" />
