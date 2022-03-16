@@ -93,7 +93,7 @@ class Post {
 
   /// A list of tags assigned to the post.
   List<Tag>? tags;
-  List<Acf>? acf;
+  Acf? acf;
 
   /// A list of attachments contained in the post.
   List<Media>? attachments;
@@ -183,7 +183,7 @@ class Post {
     permalinkTemplate = json['permalink_template'];
     generatedSlug = json['generated_slug'];
     lLinks = json['_links'] != null ? new Links.fromJson(json['_links']) : null;
-    acf = json['acf'];
+    acf = json['acf'] != null ? new Acf.fromJson(json['acf']) : null;
   }
 
   Map<String, dynamic> toJson() {
@@ -206,7 +206,7 @@ class Post {
     data['format'] = enumStringToName(this.format.toString());
     data['categories'] = listToUrlString(this.categoryIDs ?? []);
     data['tags'] = listToUrlString(this.tagIDs ?? []);
-    data['acf'] = this.acf;
+    data['acf'] = this.acf?.toJson();
 
     return data;
   }
